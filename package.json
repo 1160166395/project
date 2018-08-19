@@ -1,0 +1,30 @@
+{
+  "name": "yougou",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "dependencies": {
+    "browser-sync": "^2.24.6",
+    "guid": "^0.0.12",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1",
+    "pump": "^3.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1160166395/project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/1160166395/project/issues"
+  },
+  "homepage": "https://github.com/1160166395/project#readme"
+}

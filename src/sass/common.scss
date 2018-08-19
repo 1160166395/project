@@ -1,0 +1,452 @@
+@import 'var';
+#top_nav{
+    background:url(../img/sf-ico.jpg) repeat-x left -260px;
+    min-width:1190px;
+    height:32px;
+    .container{
+        .linkbox{
+            height: 30px;
+            line-height: 30px;
+            text-align:center;
+            float:left;
+            border-right:1px solid #e9e9e9;
+            >a{
+                height: 32px;
+                display:block;
+                &:hover{
+                    color:$mainColor;
+                }
+            }
+        }
+        .yg{
+            border:1px solid #e9e9e9;
+            width: 98px;
+            a{
+                background:#fff;
+                font-size:14px;
+            }
+
+        }
+        .phone{
+            width: 100px;
+            position:relative;
+            font-size:14px;
+            i{
+                position:absolute;
+                height: 13px;
+                width: 8px;
+                left:9px;
+                top:9px;
+                background:url(../img/sf-ico.png) no-repeat -152px -80px;
+                overflow:hidden;
+            }
+            .tip{
+                top:10px;
+                left:82px;
+                width: 11px;
+                height: 11px;
+                background:url(../img/sf-ico.png) no-repeat -187px -840px;
+            }
+            .phone_app{
+                display:none;
+                position:absolute;
+                width: 335px;
+                padding:15px 10px 10px 20px;
+                box-shadow:1px 1px 3px rgba(0,0,0,0.3);
+                background:#fff;
+                border:1px solid #ddd;
+                .icon{
+                    background:url(../img/app-rqcode.jpg) no-repeat;
+                    height: 100px;
+                }
+                p{
+                    font-size:18px;
+                    color:#000;
+                    line-height: 18px;
+                    text-align:left;
+                    span:first-child{
+                        font-weight:bold;
+                        margin-left:10px;
+                    }
+                }
+            }
+            &:hover .phone_app{
+                display:block;
+            }
+        }
+        .login,.logon{
+            border-right:0 none;
+            a{
+            color:$mainColor;
+            font-size:14px;
+            display:block;
+            padding:0;
+                span{
+                    border-right:1px solid #666;
+                    padding-right:20px;
+                    display:inline-block;
+                    line-height:14px;
+                    }
+            }
+        }
+        .login{
+            a{
+                span{
+                    border:0 none;
+                }
+            }
+        }
+        .my_yg{
+            margin-left:10px;
+            border-right:0 none;
+            .a1{
+                background:url(../img/sf-ico.png) no-repeat -126px -830px;
+                width: 60px;
+            }
+            .info_icon{
+                display:none;
+                position:absolute;
+                z-index:12;
+                a{
+                    width: 58px;
+                }
+            }
+                &:hover{
+                    height: 33px;
+                    background:#fff;
+                    border:1px solid #dfdfdf;
+                    border-bottom:0 none; 
+                    box-sizing:border-box;
+                    .a1{
+                        width: 58px
+                    }
+                    .info_icon{
+                        display:block;
+                        border:1px solid #dfdfdf;
+                        border-top:0 none;
+                        left:-1px;
+                    }
+                }
+            }
+        li{
+            position:relative;
+            z-index:13;
+            a{
+                &:hover{
+                    color:$mainColor;
+                }
+            }       
+            >a{
+                padding:0 10px;
+                display:block;
+                text-align:left;
+            }
+            &:nth-child(4){
+                border-right:0 none;
+            }
+            &:nth-child(5){
+                border-right:0 none;
+                .a1{
+                    background:url(../img/sf-ico.png) no-repeat -150px -830px;
+                    width: 45px;
+                    padding-right:0;
+                }
+                .red{
+                    color:$mainColor;
+                }
+                ul{
+                    position:absolute;
+                    background:#fff;
+                    width: 186px;
+                    padding:10px 20px;
+                    z-index:12;
+                    left:-174px;
+                    border:1px solid #dfdfdf;
+                    top:30px;
+                    display:none;
+                    border-top:0 none;
+                }
+                &:hover{
+                    background:#fff;
+                    border:1px solid #dfdfdf;
+                    border-bottom:0 none ; 
+                    ul{
+                        display:block;
+                    }
+                    .a1{
+                        width: 43px;
+                    }
+                }
+            }
+            &:nth-child(6){
+                border-right:0 none;
+                .a1{
+                    background:url(../img/sf-ico.png) no-repeat -150px -830px;
+                    width: 45px;
+                    padding-right:0;
+                    
+                }
+                ul{
+                    position:absolute;
+                    background:#fff;
+                    width: 52px;
+                    padding:10px 20px;
+                    z-index:12;
+                    left:-40px;
+                    border:1px solid #dfdfdf;
+                    top:30px;
+                    border-top:0 none;
+                    display:none;
+                    a{
+                        display:block;
+                        line-height: 20px;
+                        padding:0;
+                    }
+                }
+                &:hover{
+                    border:1px solid #dfdfdf;
+                    background:#fff;
+                    border-bottom:0 none;
+                    ul{
+                        display:block;
+                    }
+                    .a1{
+                        width: 43px;
+                    }
+                }
+            }
+        }
+    }
+}
+.red{
+    color:$mainColor;
+    }
+#logo{
+    background:#f8f8f8;
+    padding-top:22px;
+    padding-bottom:15px;
+    min-width:1190px;
+    .left{
+        text-indent:-1000px;
+        width: 203px;
+        height: 89px;
+        background:url(../img/logo.jpg) no-repeat;
+        a{
+            display:block;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .center{
+        width: 526px;
+        margin-top:21px;
+        margin-left:105px;
+        .input_box{
+            width: 433px;
+            height: 29px;
+            border:2px solid #000;
+            padding-left:2px;
+            background:#fff;
+            display:inline-block;
+            vertical-align:middle;
+            #keyWord{
+                width: 100%;
+                height: 24px;
+                margin-top:3px;
+            }
+        }
+        .search{
+            display:inline-block;
+            height: 33px;
+            background:url(../img/sf-ico.png) no-repeat -115px -530px;
+            width: 83px;
+            vertical-align:middle;
+            margin-left:-4px;
+        }
+        .hot{
+            a{
+                &:hover{
+                    color:$mainColor;
+                }
+            }
+        }
+    }
+    .right{
+        margin-top:21px;
+        width: 146px;
+        .shopCart{
+            height: 31px;
+            border:1px solid #d1d2d3;
+            background:#fff;
+            line-height: 31px; 
+            .tip_left{
+                width: 22px;
+                height: 21px;
+                margin-left:10px;
+                margin-top:5px;
+                margin-right:15px;
+                background:url(../img/sf-ico.png) no-repeat -90px -531px;
+                display:inline-block;
+                vertical-align:top;
+            }  
+            .tip_right{
+                width: 6px;
+                height: 3px;
+                margin-top:14px;
+                overflow:hidden;
+                background:url(../img/sf-ico.png) no-repeat -88px -552px;
+                display:inline-block;
+                margin-left:22px;
+                vertical-align:top;
+            }
+        }
+        p:last-child{
+            text-align:center;
+         }
+    }
+}
+#nav{
+    background:#f8f8f8;
+    min-width:1190px;
+    border-bottom:3px solid #000;
+    .left{
+        width: 200px;
+        position:relative;
+        h2{
+          background:url(../img/sf-ico.png) no-repeat 1px -616px #000; 
+          height: 39px;
+          border-bottom:3px solid #000; 
+          padding:0 13px;
+          a{
+            width: 100%;
+            display:block;
+            height: 100%;
+          }
+        }
+        .listOne{
+            margin-top:3px;
+            width: 200px;
+            position:absolute;
+            background:#f5f5f5;
+            >li{
+                &:hover{
+                    >.listTwo{
+                        display:block;
+                    }
+                }
+               .first{
+                    color:#000;
+                    font-weight:bold;
+               }
+               >p:first-child{
+                margin-bottom:6px;
+               }
+               >P:nth-child(2){
+                padding-left:26px;
+               }
+                padding:12px 10px;
+                height: 44px;
+            }
+            .checkedli{
+                background:#666;
+                p{
+                    a{
+                        color:#fff;
+                    } 
+                }
+                .ico{
+                    background-position-x:-53px;
+                }
+            }
+            .ico{
+                background:url(../img/icolist.jpg) no-repeat;
+                width: 26px;
+                height: 20px;
+                overflow:hidden;
+                display:inline-block;
+            }
+            .nvx{
+                background-position:0px -24px;
+            }
+            .star{
+                background-position:0px -1px;
+            }
+            .yund{
+                background-position:0px -206px;
+            }
+            .huw{
+                background-position:0px -180px;
+            }
+            .tongx{
+                background-position:0px -154px;
+            }
+            .xiangb{
+                background-position:0px -128px;
+            }
+            a:hover{
+                text-decoration:underline;
+            }
+            .listTwo{
+                height: 478px;
+                border:1px solid #d1d2d3;
+                position:absolute;
+                width: 154px;
+                background:#fff;
+                right:-156px;
+                top:0;
+                display:none;
+                li{
+                    padding:0 0 6px 15px;
+                }
+                p{
+                    background:#d1d2d3;
+                    width: 126px;
+                    height: 16px;
+                    margin:9px 0 14px 0;
+                    line-height:16px;
+                    color:#000;
+                    font-weight:bold;
+                    text-align:center;
+                    &:hover{
+                        transform:translate(10px,0);
+                    }
+                }
+                a{
+                    display:inline-block;
+                    width: 60px;
+                    margin-left:5px;
+                    &:hover{
+                        color:$mainColor;
+                    }
+                }
+            }
+        }
+
+    }
+    .right{
+        width: 990px;
+        li{
+            float:left;
+            a{
+                height: 39px;
+                display:block;
+                padding:0 13px;
+                font-weight:bold;
+                font-size:17px;
+                line-height: 36px;
+                color:#000;
+            }
+            .red{
+                color:$mainColor;
+            }
+            &:hover{
+                a{
+                    color:$mainColor;
+                }
+            }
+        }
+        .last{
+            float:right;
+        }
+    }
+}
