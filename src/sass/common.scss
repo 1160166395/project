@@ -1,4 +1,7 @@
 @import 'var';
+body{
+    background:#f8f8f8;
+}
 #top_nav{
     background:url(../img/sf-ico.jpg) repeat-x left -260px;
     min-width:1190px;
@@ -448,5 +451,280 @@
         .last{
             float:right;
         }
+    }
+}
+#main{
+    height: 600px;
+}
+#pageFooter{
+    margin-top:30px;
+
+}
+#ygguid{
+    margin-bottom:10px;
+    .container{
+        background:#fff;
+        h2{
+            padding-bottom:5px;
+            padding-left:8px;
+            border-bottom:2px solid #808080;
+            color:#666;
+            font-size:18px;
+        }
+        .item_bom{
+            padding:0 54px;
+            position:relative;
+            &::before{
+                content:'';
+                position:absolute;
+                background:url(../img/sf-ico.png) no-repeat 0 -71px;
+                width: 12px;
+                height: 22px;
+                top:129px;
+                left:12px;
+            }
+            &::after{
+                content:'';
+                position:absolute;
+                background:url(../img/sf-ico.png) no-repeat -13px -71px;
+                width: 12px;
+                height: 22px;
+                top:129px;
+                right:12px;            }
+            .brand{
+                background:#e8e8e8;
+                border:1px solid #e8e8e8;
+                width: 1080px;
+                height: 244px;
+                a{
+                    float:left;
+                    border-right:1px solid #e8e8e8;
+                    border-bottom:1px solid #e8e8e8;
+                    background:#fff;
+                    width: 89px;
+                    height: 60px;
+                    text-align:center;
+                }
+            }
+            
+        }
+        .buy_link{
+            padding:20px 0 46px 0;
+            li{
+                width: 590px;
+                display:inline-block;
+                margin-bottom:16px;
+            }
+            dl{
+                margin-left:37px;
+                width: 518px;
+                border-bottom:1px dashed #e8e8e8;
+                display:inline-block;
+                dd{
+                    float:left;
+                    height:29px;
+                    width: 84px;
+                    a{
+                        font-weight:bold;
+                        font-size:14px;
+                    }
+                }
+                dt{
+                    float:left;
+                    height:29px;
+                    display:inline-block;
+                    margin-right:17px;
+                    a{
+                        font-size:14px;
+                    }
+                }
+                >a{
+                    float:right;
+                    font-size:14px;
+                }
+                a:hover{
+                    color:$mainColor;
+                }
+            }
+        }
+    }
+}
+#footer{
+    background:#f4f4f4;
+    border-top:1px solid #ececec;
+    padding-top:8px;
+    padding-bottom:10px;
+    .hd{
+        border:1px solid #ddd;
+        padding:7px 0 7px 85px;
+        margin-bottom:10px;
+        li{
+            float:left;
+            a{
+                display:block;
+                height: 34px;
+                margin:0 80px 0 20px;
+                color:#666;
+                font-size:18px;
+                line-height: 34px;
+                padding-left:42px;
+                position:relative;
+                &:hover{
+                    color:$mainColor;
+                }
+            }
+            @for $i from 1 to 5{
+                &:nth-child(#{$i}){
+                    a{
+                        $j:$i+-1;
+                        &::before{
+                            content:'';
+                            background:url(../img/sf-ico.png) no-repeat -34px*$j -38px;
+                            width: 32px;
+                            height: 32px;
+                            position:absolute;
+                            left:0;
+                            } 
+                    }
+                }
+            }
+        }
+    }
+    .left{
+        dl{
+            float:left;
+            width: 150px;
+            padding-bottom:5px;
+            a:hover{
+                color:$mainColor;
+            }
+            dd{
+                height: 25px;
+                padding-left:3px;
+                color:#666;
+                font-weight:bold;
+                line-height: 25px;
+            }
+            dt{
+                a{
+                    display:block;
+                    line-height: 20px;
+                    color:#666;
+                    padding-left:3px;
+                }
+            }
+        }
+    }
+    .center{
+        width: 162px;
+        padding-bottom:5px;
+        padding-left:3px;
+        color:#666;
+        dd{
+            height: 25px;
+            line-height: 25px;
+            font-weight:bold;
+        }
+        dt{
+            height: 20px;
+            line-height: 20px;
+        }
+        .kf{
+            height: 35px;
+            a{
+                padding-left:30px;
+                height: 20px;
+                padding-top:5px;
+                background:url(../img/newbase.png) no-repeat -315px -25px;
+                display:inline-block;
+                &:hover{
+                    color:$mainColor;
+                }
+            }
+            
+        }
+
+    }
+    .right{
+        margin-left:20px;
+        padding-bottom:5px;
+        width: 240px;
+        .lright{
+            padding-left:3px;
+        }
+        .rright{
+            padding-left:3px;
+            width: 118px;
+            text-align:right;
+        }
+    }
+}
+#bot{
+    background:#000;
+    min-width:1190px;
+    padding-bottom:12px;
+    .container{
+
+    }
+    .left{
+        padding-top:30px;
+        width: 110px;
+        height: 50px;
+        a{
+            display:block;
+            background:url(../img/endlogo.gif);
+            height: 50px;
+        }
+    }
+    .right{
+        text-align:right;
+        color:#fff;
+        a{
+            color:#fff;
+        }
+        p{
+            height: 25px;
+            padding-right:10px;
+            line-height: 25px;   
+        }
+        .list{
+            a{
+                margin:0 5px;
+            }
+        }
+        ul{
+            padding:4px 10px 0 0;
+            li{
+                float:left;
+            }
+            a{
+                margin:0 5px;
+                width: 108px;
+                height: 40px;
+                display:block;
+            } 
+            li:nth-child(1){
+                a{
+                    background:url(../img/sm_124x47.png) no-repeat;
+                    background-size:cover;
+                }
+            }
+            li:nth-child(2){
+                a{
+                    background:url(../img/ebs-logo.jpg) no-repeat;
+                }
+            }
+            li:nth-child(3){
+                a{
+                    background:url(../img/beian1.png) no-repeat;
+                }
+            }
+            li:nth-child(4){
+                a{
+                    background:url(../img/beian2.png) no-repeat;
+                }
+            }
+        }
+        
     }
 }
