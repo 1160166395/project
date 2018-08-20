@@ -1,0 +1,69 @@
+body { color: #666; }
+
+#top_nav .container { width: 990px; }
+
+#top_nav .container .yg a { background: transparent; }
+
+.container { width: 990px; }
+
+#uc_hd { padding: 13px 0; border-bottom: 1px solid #dcdbde; }
+
+#uc_hd h2 { float: left; padding: 5px 30px 5px 0; border-right: 1px solid #e6e6e6; margin-right: 30px; }
+
+#uc_hd h2 a { display: block; }
+
+#uc_hd p { font-size: 18px; line-height: 42px; }
+
+#login { margin-bottom: 140px; }
+
+#login .form { margin-top: 50px; width: 378px; }
+
+#login .form .tab_reg { border-bottom: 1px solid #f3f3f3; margin: 24px 15px 0 15px; font-size: 0; }
+
+#login .form .tab_reg a { width: 174px; height: 40px; line-height: 40px; text-align: center; display: inline-block; font-size: 12px; }
+
+#login .form .tab_reg .normal { background: #333; color: #fff; }
+
+#login .form .tab_reg .phone { background: #f3f3f3; color: #333; }
+
+#login .form .tab_reg .phone:hover { color: #e60012; }
+
+#login .reg_from { padding-top: 30px; margin: 0 15px; padding-left: 10px; position: relative; }
+
+#login .reg_from .input, #login .reg_from .psw { margin-left: 8px; width: 313px; margin-bottom: 28px; border: 1px solid #e3e2e2; height: 36px; }
+
+#login .reg_from .input input, #login .reg_from .psw input { padding-left: 78px; height: 36px; width: 235px; }
+
+#login .reg_from .warnpsw, #login .reg_from .warn { margin-left: 8px; display: none; padding-left: 25px; line-height: 28px; color: #e60012; }
+
+#login .reg_from .warnpsw:before, #login .reg_from .warn:before { content: ''; background: url(../img/icon_sig_reg.png) no-repeat -180px -92px; position: absolute; left: 18px; height: 23px; width: 36px; }
+
+#login .reg_from .input::before { content: ''; background: url(../img/icon_sig_reg.png) no-repeat -168px -27px; position: absolute; left: 20px; height: 36px; width: 48px; }
+
+#login .reg_from .psw::before { content: ''; background: url(../img/icon_sig_reg.png) no-repeat -168px -61px; position: absolute; left: 20px; height: 36px; width: 48px; }
+
+#login .reg_from .forget { margin-right: 17px; text-align: right; height: 26px; line-height: 26px; }
+
+#login .reg_from .sub { text-align: center; }
+
+#login .reg_from .sub input { background: #e1373a; color: #fff; font-size: 16px; height: 40px; line-height: 40px; width: 312px; }
+
+#login .reg_from .hz { color: #999; margin-top: 10px; text-align: center; }
+
+#login .reg_from .cob_link { color: #999; margin-top: 10px; text-align: center; }
+
+#login .reg_from .cob_link a { line-height: 54px; padding: 9px 17px; margin: 0 5px; }
+
+#login .reg_from .cob_link a:nth-child(1) { background: url(../img/icon_sig_reg.png) no-repeat -37px -21px; }
+
+#login .reg_from .cob_link a:nth-child(2) { background: url(../img/icon_sig_reg.png) no-repeat -73px -21px; }
+
+#login .reg_from .cob_link a:nth-child(3) { background: url(../img/icon_sig_reg.png) no-repeat -110px -21px; }
+
+#login .reg_from .cob_link a:nth-child(4) { background: url(../img/icon_sig_reg.png) no-repeat -37px -57px; }
+
+#login .reg_from .cob_link a:nth-child(5) { background: url(../img/icon_sig_reg.png) no-repeat -73px -57px; }
+
+.tright { text-align: center; line-height: 20px; color: #aaa; }
+
+.tright a { color: #aaa; }
