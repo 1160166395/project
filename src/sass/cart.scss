@@ -1,0 +1,251 @@
+@import 'var';
+body{
+    background:#fff;
+}
+.container{
+    width: 990px;
+    min-width:990px;
+}
+#top_nav{
+    background:#F1F1F1;
+    .container{
+        .yg{
+            border-bottom:0 none;
+            border-top:0 none;
+            a{
+            background:#F1F1F1;
+            }
+        }
+    }
+}
+#cartlogo{
+    margin-top:15px;
+    margin-bottom:20px;
+    .left{
+        text-indent:-1000px;
+        background:url(../img/carlogo.png) no-repeat;
+        width: 355px;
+        height: 50px;
+    }
+}
+#cart{
+    .container{
+         border:1px solid #EEEEEE;
+         border-bottom:0 none;
+         box-sizing:border-box;
+    }
+    .head{
+        color:#AAAAAA;
+        line-height: 42px;
+        height: 42px;
+        border-bottom:1px solid #eee;
+        p{
+            display:inline-block;
+            height: 42px;
+            line-height: 42px;
+            text-align:center;
+
+        }
+        #all{
+            margin-left:21px;
+        }
+        p:nth-child(3){
+            width: 360px;
+        }
+        p:nth-child(4),p:nth-child(6),p:nth-child(7){
+            width: 110px;
+        }
+        p:nth-child(5),p:nth-child(8){
+            width: 107px;
+        }
+    }
+    .content{
+        li{
+            color:#666;
+            padding:15px 0 15px 5px;
+            border-bottom: 1px dotted #eee;
+            div{
+                float:left;
+            }
+            div:nth-child(1){
+                padding:29px 0 0 8px;
+                width: 20px;
+            }
+            div:nth-child(2){
+                a{
+                    padding:5px;
+                    border:1px solid #e6e6e6;
+                    display:block;
+                }
+                width: 80px;
+                text-align:center;
+            }
+            div:nth-child(3){
+                width: 250px;
+                padding: 18px 52px 0 20px;
+                &:hover{
+                    color:$mainColor;
+                }
+            }
+            div:nth-child(4){
+                padding-top: 18px;
+                padding-left:20px;
+                line-height: 18px;
+                width: 85px;
+                span{
+                    color:#a9a9a9;
+                }
+            }
+            div:nth-child(5){
+                width: 110px;
+                padding-top:25px;
+                text-align:center;
+            }
+            div:nth-child(6){
+                padding:23px 0 0 0;
+                width: 110px;
+                font-size:0;
+                span{
+                    width: 22px;
+                    font-size:12px;
+                    height: 22px;
+                    border:1px solid #c6c6c6;
+                    line-height: 22px;
+                    text-align:center;
+                    display:inline-block;
+                    vertical-align:middle;
+                }
+                .del{
+                    border-right:0 none;
+                    margin-left:17px;
+                }
+                .add{
+                    border-left:0 none;
+                }
+                input{
+                    border:1px solid #c6c6c6;
+                    width: 28px;
+                    height: 22px;
+                    line-height: 22px;
+                    text-align:center;
+                    vertical-align:middle;
+                    font-size:12px;
+
+                }
+            }
+            div:nth-child(7){
+                width: 108px;
+                text-align: center;
+                padding-top: 25px;
+            }
+            div:nth-child(8){
+                width: 118px;
+                text-align: center;
+                padding-top: 16px;
+                p{
+                    &:hover{
+                        color:$mainColor;
+                    }
+                }
+            }
+        }
+    }
+    .foot{
+        color:#666;
+        .clear{
+            padding-bottom:20px;
+            li{
+                height: 30px;
+                margin:10px 37px 0 0;
+                float:left;
+                cursor:pointer;
+            }
+            input{
+                margin-left:13px;
+            }
+        }
+    }
+}
+#total{
+    .account{
+            background: #eee;
+            // height: 54px;
+            .go{
+                width: 126px;
+                height: 43px;
+                line-height: 43px;
+                background:url(../img/shopcart.png) no-repeat -19px -108px;
+                font-size: 16px;
+                text-align: center;
+                float:left;
+                margin: 6px 0 5px 35px;
+            }
+            p{
+                color: #36c;
+                margin:15px 0 0 35px;
+                float:left;
+            }
+            .right{
+                vertical-align:top;
+                line-height: 54px;
+                height: 54px;
+                .red{
+                    font-size:20px;
+                }
+                strong:nth-child(1){
+                    color:#666;
+                }
+                strong:nth-child(2){
+                    font-size:16px;
+                    color:#a9a9a9;
+                }
+                a{
+                    background: #ff5000;
+                    text-indent: 0;
+                    text-align: center;
+                    color: #fff;
+                    font-size: 14px;
+                    margin-left: 50px;
+                    width: 129px;
+                    display:inline-block;
+                    vertical-align:top;
+                }
+            }
+    }
+    .protect{
+        padding-top:15px;
+        .right{
+            p{
+                color:#a9a9a9;
+                height: 22px;
+                line-height: 22px;
+                text-align:right;
+                span{
+                    position:relative;
+                    padding-left:18px;
+                    &::before{
+                        content:'';
+                        background:url(../img/shopcart.png) no-repeat;
+                        width: 18px;
+                        height: 16px;
+                        position:absolute;
+                        left:2px;
+                        top:1px;
+                    }
+                    &:nth-child(2)::before{
+                        background-position:0 -18px;
+                    }
+                    &:nth-child(3)::before{
+                        background-position:0 -38px;
+                    }      
+                }
+                a{
+                    color:#a9a9a9;
+                    &:hover{
+                        color:$mainColor;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,4 +1,4 @@
-body { color: #666; }
+body { color: #666; min-width: 990px; }
 
 #top_nav .container { width: 990px; }
 
@@ -34,9 +34,9 @@ body { color: #666; }
 
 #login .reg_from .input input, #login .reg_from .psw input { padding-left: 78px; height: 36px; width: 235px; }
 
-#login .reg_from .warnpsw, #login .reg_from .warn { margin-left: 8px; display: none; padding-left: 25px; line-height: 28px; color: #e60012; }
+#login .reg_from .warns { margin-left: 8px; display: none; padding-left: 25px; line-height: 28px; color: #e60012; }
 
-#login .reg_from .warnpsw:before, #login .reg_from .warn:before { content: ''; background: url(../img/icon_sig_reg.png) no-repeat -180px -92px; position: absolute; left: 18px; height: 23px; width: 36px; }
+#login .reg_from .warns:before { content: ''; background: url(../img/icon_sig_reg.png) no-repeat -180px -92px; position: absolute; left: 18px; height: 23px; width: 36px; }
 
 #login .reg_from .input::before { content: ''; background: url(../img/icon_sig_reg.png) no-repeat -168px -27px; position: absolute; left: 20px; height: 36px; width: 48px; }
 

@@ -5,6 +5,7 @@
         <link rel="stylesheet" type="text/css" href="../css/base.css" />
         <link rel="stylesheet" type="text/css" href="../css/common.css" />
         <link rel="stylesheet" type="text/css" href="../css/logon.css" />
+        <script type="text/javascript" src="../js/require" data-main="../js/logon"></script>
     </head>
     <body>
     <div id="top_nav">
@@ -79,7 +80,7 @@
                         <input type="text" placeholder="请输入您的手机号" id="phones" name="phones" />
                     </div>
                     <p class="warn warns">
-                        请输入手机号码
+                        格式错误
                     </p>
                     <div class="yzm ipt ">
                         <label for="yzm">验证码</label>
@@ -87,23 +88,26 @@
                     </div>
                     <p class="_yzm "></p>
                     <p class="warnyzm warns">请输入验证码</p>
+                    <p class="warnyzms warns">验证码错误</p>
                     <div class="psw ipt">
                         <label for="password">密码</label>
                         <input type="password" id="password" name="password" placeholder="字母、数字、符号均可，6-25个字符以内"/>
                     </div>
                     <p class="warnpsw warns">请输入密码</p>
+                    <p class="pswstyle warns">密码格式错误</p>
                     <div class="psws ipt">
                         <label for="passwords">确认密码</label>
                         <input type="password" id="passwords" name="passwords"/>
                     </div>
                     <p class="warnpsws warns">请输入确认密码</p>
+                    <p class="pswstyles warns">两次密码不相同</p>
                     <p class="agree">
                         <input type="checkbox" id="agree" name="agree" checked />
                         <label for="agree">我已阅读并同意<a href="#" class="red">《优购会员注册协议》</a></label>
                     </p>
                     <div class="sub">
                         <input type="submit"
-                        value="确认并注册" />
+                        value="确认并注册"id="sub" />
                     </div>
                 </div>
             </div> 

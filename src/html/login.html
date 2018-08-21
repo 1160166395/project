@@ -5,6 +5,7 @@
         <link rel="stylesheet" type="text/css" href="../css/base.css" />
         <link rel="stylesheet" type="text/css" href="../css/common.css" />
         <link rel="stylesheet" type="text/css" href="../css/login.css" />
+        <script type="text/javascript" src="../js/require" data-main="../js/login"></script>
     </head>
     <body>
     <div id="top_nav">
@@ -77,16 +78,19 @@
                     <div class="input">
                         <input type="text" placeholder="手机号/会员名称/邮箱" id="username" name="username" />
                     </div>
-                    <p class="warn">
+                    <p class="warn warns">
                         请输入账号
+                    </p>
+                    <p class="err warns">
+                        你的账号或密码有误
                     </p>
                     <div class="psw">
                         <input type="password" id="password" name="password" placeholder="请输入密码"/>
                     </div>
-                    <p class="warnpsw">请输入密码</p>
+                    <p class="warnpsw warns">请输入密码</p>
                     <p class="forget"><a href="#">忘记密码?</a></p>
                     <div class="sub">
-                        <input type="submit"
+                        <input type="submit" id="sub" 
                         value="点击登录" />
                     </div>
                     <p class="hz">使用合作网站账号登录优购：</p>

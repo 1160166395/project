@@ -1,0 +1,103 @@
+body { background: #fff; }
+
+.container { width: 990px; min-width: 990px; }
+
+#top_nav { background: #F1F1F1; }
+
+#top_nav .container .yg { border-bottom: 0 none; border-top: 0 none; }
+
+#top_nav .container .yg a { background: #F1F1F1; }
+
+#cartlogo { margin-top: 15px; margin-bottom: 20px; }
+
+#cartlogo .left { text-indent: -1000px; background: url(../img/carlogo.png) no-repeat; width: 355px; height: 50px; }
+
+#cart .container { border: 1px solid #EEEEEE; border-bottom: 0 none; box-sizing: border-box; }
+
+#cart .head { color: #AAAAAA; line-height: 42px; height: 42px; border-bottom: 1px solid #eee; }
+
+#cart .head p { display: inline-block; height: 42px; line-height: 42px; text-align: center; }
+
+#cart .head #all { margin-left: 21px; }
+
+#cart .head p:nth-child(3) { width: 360px; }
+
+#cart .head p:nth-child(4), #cart .head p:nth-child(6), #cart .head p:nth-child(7) { width: 110px; }
+
+#cart .head p:nth-child(5), #cart .head p:nth-child(8) { width: 107px; }
+
+#cart .content li { color: #666; padding: 15px 0 15px 5px; border-bottom: 1px dotted #eee; }
+
+#cart .content li div { float: left; }
+
+#cart .content li div:nth-child(1) { padding: 29px 0 0 8px; width: 20px; }
+
+#cart .content li div:nth-child(2) { width: 80px; text-align: center; }
+
+#cart .content li div:nth-child(2) a { padding: 5px; border: 1px solid #e6e6e6; display: block; }
+
+#cart .content li div:nth-child(3) { width: 250px; padding: 18px 52px 0 20px; }
+
+#cart .content li div:nth-child(3):hover { color: #e60012; }
+
+#cart .content li div:nth-child(4) { padding-top: 18px; padding-left: 20px; line-height: 18px; width: 85px; }
+
+#cart .content li div:nth-child(4) span { color: #a9a9a9; }
+
+#cart .content li div:nth-child(5) { width: 110px; padding-top: 25px; text-align: center; }
+
+#cart .content li div:nth-child(6) { padding: 23px 0 0 0; width: 110px; font-size: 0; }
+
+#cart .content li div:nth-child(6) span { width: 22px; font-size: 12px; height: 22px; border: 1px solid #c6c6c6; line-height: 22px; text-align: center; display: inline-block; vertical-align: middle; }
+
+#cart .content li div:nth-child(6) .del { border-right: 0 none; margin-left: 17px; }
+
+#cart .content li div:nth-child(6) .add { border-left: 0 none; }
+
+#cart .content li div:nth-child(6) input { border: 1px solid #c6c6c6; width: 28px; height: 22px; line-height: 22px; text-align: center; vertical-align: middle; font-size: 12px; }
+
+#cart .content li div:nth-child(7) { width: 108px; text-align: center; padding-top: 25px; }
+
+#cart .content li div:nth-child(8) { width: 118px; text-align: center; padding-top: 16px; }
+
+#cart .content li div:nth-child(8) p:hover { color: #e60012; }
+
+#cart .foot { color: #666; }
+
+#cart .foot .clear { padding-bottom: 20px; }
+
+#cart .foot .clear li { height: 30px; margin: 10px 37px 0 0; float: left; cursor: pointer; }
+
+#cart .foot .clear input { margin-left: 13px; }
+
+#total .account { background: #eee; }
+
+#total .account .go { width: 126px; height: 43px; line-height: 43px; background: url(../img/shopcart.png) no-repeat -19px -108px; font-size: 16px; text-align: center; float: left; margin: 6px 0 5px 35px; }
+
+#total .account p { color: #36c; margin: 15px 0 0 35px; float: left; }
+
+#total .account .right { vertical-align: top; line-height: 54px; height: 54px; }
+
+#total .account .right .red { font-size: 20px; }
+
+#total .account .right strong:nth-child(1) { color: #666; }
+
+#total .account .right strong:nth-child(2) { font-size: 16px; color: #a9a9a9; }
+
+#total .account .right a { background: #ff5000; text-indent: 0; text-align: center; color: #fff; font-size: 14px; margin-left: 50px; width: 129px; display: inline-block; vertical-align: top; }
+
+#total .protect { padding-top: 15px; }
+
+#total .protect .right p { color: #a9a9a9; height: 22px; line-height: 22px; text-align: right; }
+
+#total .protect .right p span { position: relative; padding-left: 18px; }
+
+#total .protect .right p span::before { content: ''; background: url(../img/shopcart.png) no-repeat; width: 18px; height: 16px; position: absolute; left: 2px; top: 1px; }
+
+#total .protect .right p span:nth-child(2)::before { background-position: 0 -18px; }
+
+#total .protect .right p span:nth-child(3)::before { background-position: 0 -38px; }
+
+#total .protect .right p a { color: #a9a9a9; }
+
+#total .protect .right p a:hover { color: #e60012; }

@@ -1,6 +1,7 @@
 @import 'var';
 body{
     color:#666;
+    min-width:990px;
 }
 #top_nav{
     .container{
@@ -79,7 +80,7 @@ body{
                 width: 235px;
             }
         }
-        .warnpsw,.warn{
+        .warns{
             margin-left:8px;
             display:none;
             padding-left:25px;
