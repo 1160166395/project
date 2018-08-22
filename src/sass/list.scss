@@ -1,0 +1,166 @@
+@import 'var';
+body{
+    background:#fff;
+}
+.container{
+    min-width:1190px;
+}
+#nav{
+    .left{
+        .listOne{
+            display:none;
+        }
+    }
+}
+#main{
+    background:#fff;
+    color:#666;
+    .bread{
+        margin-bottom:10px;
+        padding-top:15px;
+        a:hover{
+            color:$mainColor;
+        }
+        span,.all{
+            height: 20px;
+            margin-bottom:3px;
+            line-height: 20px;
+            display:inline-block;
+        }
+        .a_posi{
+            position:relative;
+            display:inline-block;
+            a{
+                height: 20px;
+                margin-bottom:3px;
+                line-height: 20px;
+                display:block;
+            }
+            .tit{
+                padding:0 20px 0 10px;
+                // border:1px solid #ccc;
+                border-bottom:0 none;
+                position:relative;
+                background:#fff;
+                z-index:10;
+                margin:1px 1px 0 1px;
+                &::after{
+                    content:'';
+                    position:absolute;
+                    background:url(../img/filter-sprite.png) no-repeat -110px -154px;
+                    width: 12px;
+                    height: 5px;
+                    top:8px;
+                    right:2px;
+                }
+            }
+            ul{
+                position:absolute;
+                margin-top:-4px;
+                padding:15px;
+                display:none;
+                border:1px solid #CCC;
+                z-index:9;
+                a{
+                    display:block;
+                    width: 48px;
+                }
+            }
+        }
+    }
+    .paixu{
+        padding:5px 0;
+        border:1px solid #ccc;
+        background:#f5f5f5;
+        height: 23px;
+        line-height: 23px;
+        .left{
+            li{
+                float:left;
+            }
+            li:first-child{
+                padding:0 10px 0 25px;
+            }
+            .tt{
+                height: 23px;
+                width: 50px;
+                margin-left:8px;
+                background:#ddd;
+                text-align:center;
+                line-height: 23px;
+                cursor:pointer;
+                &:hover{
+                    color:$mainColor;
+                }
+            }
+            .active{
+                background:$mainColor;
+                color:#fff;
+                &:hover{
+                    color:#fff;
+                }
+            }
+            .tt_04,.tt_05{
+                background:url(../img/resprite12.png) no-repeat 0 -23px;
+                text-align:left;
+                padding-left:8px;
+                width: 42px;
+            }
+            .tt_04.active.actives,.tt_05.active.actives{
+                background-position:0 0;
+            }
+            .tt_04.active,.tt_04.active{
+                background-position:0 -46px;
+            }
+        }
+        .right{
+            padding-right:25px;
+        }
+    }
+    .productes{
+        padding:10px 0;
+        li{
+            float:left;
+            margin:15px 6px 0 0;
+            width: 232px;
+            .top{
+                height: 240px;
+                cursor:pointer;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .bottom{
+                .time{
+                    height: 16px;
+                    line-height: 16px;
+                    color:#fff;
+                    background: #f0a1a1;
+                    padding-left:4px;
+                }
+                .name{
+                    height: 43px;
+                    cursor:pointer;
+                    &:hover{
+                        color:$mainColor;
+                    }
+                    line-height: 20px;
+                }
+                .prices{
+                    height: 20px;
+                    line-height: 20px;
+                    .sale{
+                        color: rgb(255, 80, 0);
+                        font-size:15px;
+                        font-weight:bold;
+                    }
+                    .price{
+                        font-size:12px;
+                        margin:0 8px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -78,7 +78,7 @@ require(['config'],function(){
         })
         //验证码验证
         $yzm.on('blur',function(){
-            var yzmval = $yzm.val();
+            var yzmval = $yzm.val().toLowerCase();
             var _yzmval = $_yzm.text().toLowerCase();
             if(yzmval === ''){
                 $(".warnyzm").css("display","block");
@@ -106,6 +106,7 @@ require(['config'],function(){
             if($agree.prop('checked')&&one&&two&&three&&four){
                 console.log(1)
                 $.ajax({
+                    type:'post',
                     url:'../api/logon.php',
                     data:"username="+username+'&password='+password,
                     success:function(msg){

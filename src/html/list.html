@@ -2,7 +2,45 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="../css/base.css" />
+        <link rel="stylesheet" type="text/css" href="../css/common.css" />
+        <link rel="stylesheet" type="text/css" href="../css/list.css" />
+        <script type="text/javascript" src="../js/require" data-main="../js/list"></script>
     </head>
     <body>
+    <div id="pageHeader"></div>
+    <div id="main">
+        <div class="container">
+            <div class="bread">
+                <span>你已选择：</span>
+                <a href="" class="all">全部分类</a>
+                <span> ></span>
+                <div class="a_posi">
+                    <a href="" class="tit">运动</a>
+                    <ul>
+                        <li><a href="">女鞋</a></li>
+                        <li><a href="">男鞋</a></li>
+                        <li><a href="">户外</a></li>
+                        <li><a href="">儿童</a></li>
+                        <li><a href="">箱包</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="paixu clearfix">
+                <ul class="left fl">
+                    <li>排序方式:</li>
+                    <li class="tt tt_01 active" data-name="id">推荐</li>
+                    <li class="tt tt_02" data-name="salenum">热销</li>
+                    <li class="tt tt_03" data-name="time">新品</li>
+                    <li class="tt tt_04" data-name="sale">价格</li>
+                    <li class="tt tt_05" data-name="count">折扣</li>
+                </ul>
+                <p class="right fr">总共找到<span class="red total">2</span>个商品</p>
+            </div>
+            <ul class="productes clearfix">
+            </ul>
+        </div>
+    </div>
+    <div id="pageFooter"></div>
     </body>
 </html>

@@ -1,0 +1,67 @@
+body { background: #fff; }
+
+.container { min-width: 1190px; }
+
+#nav .left .listOne { display: none; }
+
+#main { background: #fff; color: #666; }
+
+#main .bread { margin-bottom: 10px; padding-top: 15px; }
+
+#main .bread a:hover { color: #e60012; }
+
+#main .bread span, #main .bread .all { height: 20px; margin-bottom: 3px; line-height: 20px; display: inline-block; }
+
+#main .bread .a_posi { position: relative; display: inline-block; }
+
+#main .bread .a_posi a { height: 20px; margin-bottom: 3px; line-height: 20px; display: block; }
+
+#main .bread .a_posi .tit { padding: 0 20px 0 10px; border-bottom: 0 none; position: relative; background: #fff; z-index: 10; margin: 1px 1px 0 1px; }
+
+#main .bread .a_posi .tit::after { content: ''; position: absolute; background: url(../img/filter-sprite.png) no-repeat -110px -154px; width: 12px; height: 5px; top: 8px; right: 2px; }
+
+#main .bread .a_posi ul { position: absolute; margin-top: -4px; padding: 15px; display: none; border: 1px solid #CCC; z-index: 9; }
+
+#main .bread .a_posi ul a { display: block; width: 48px; }
+
+#main .paixu { padding: 5px 0; border: 1px solid #ccc; background: #f5f5f5; height: 23px; line-height: 23px; }
+
+#main .paixu .left li { float: left; }
+
+#main .paixu .left li:first-child { padding: 0 10px 0 25px; }
+
+#main .paixu .left .tt { height: 23px; width: 50px; margin-left: 8px; background: #ddd; text-align: center; line-height: 23px; cursor: pointer; }
+
+#main .paixu .left .tt:hover { color: #e60012; }
+
+#main .paixu .left .active { background: #e60012; color: #fff; }
+
+#main .paixu .left .active:hover { color: #fff; }
+
+#main .paixu .left .tt_04, #main .paixu .left .tt_05 { background: url(../img/resprite12.png) no-repeat 0 -23px; text-align: left; padding-left: 8px; width: 42px; }
+
+#main .paixu .left .tt_04.active.actives, #main .paixu .left .tt_05.active.actives { background-position: 0 0; }
+
+#main .paixu .left .tt_04.active, #main .paixu .left .tt_04.active { background-position: 0 -46px; }
+
+#main .paixu .right { padding-right: 25px; }
+
+#main .productes { padding: 10px 0; }
+
+#main .productes li { float: left; margin: 15px 6px 0 0; width: 232px; }
+
+#main .productes li .top { height: 240px; cursor: pointer; }
+
+#main .productes li .top img { width: 100%; height: 100%; }
+
+#main .productes li .bottom .time { height: 16px; line-height: 16px; color: #fff; background: #f0a1a1; padding-left: 4px; }
+
+#main .productes li .bottom .name { height: 43px; cursor: pointer; line-height: 20px; }
+
+#main .productes li .bottom .name:hover { color: #e60012; }
+
+#main .productes li .bottom .prices { height: 20px; line-height: 20px; }
+
+#main .productes li .bottom .prices .sale { color: #ff5000; font-size: 15px; font-weight: bold; }
+
+#main .productes li .bottom .prices .price { font-size: 12px; margin: 0 8px; }
