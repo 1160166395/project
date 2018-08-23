@@ -116,13 +116,15 @@ body { background: #f8f8f8; }
 
 #nav { background: #f8f8f8; min-width: 1190px; border-bottom: 3px solid #000; }
 
-#nav .left { width: 200px; position: relative; }
+#nav .container { position: relative; }
+
+#nav .left { width: 200px; position: absolute; left: 0; top: 0; }
 
 #nav .left h2 { background: url(../img/sf-ico.png) no-repeat 1px -616px #000; height: 39px; border-bottom: 3px solid #000; padding: 0 13px; }
 
 #nav .left h2 a { width: 100%; display: block; height: 100%; }
 
-#nav .left .listOne { margin-top: 3px; width: 200px; position: absolute; background: #f5f5f5; }
+#nav .left .listOne { width: 200px; position: absolute; background: #f5f5f5; z-index: 1000; }
 
 #nav .left .listOne > li { padding: 12px 10px; height: 44px; }
 

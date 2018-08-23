@@ -383,3 +383,12 @@ function animate(ele,opt,callback){
 function type(data){
 	return Object.prototype.toString.call(data).slice(8,-1).toLowerCase();
 }
+//导航变色
+ function checkedli(){
+	$('#nav .left').on('mouseover','.listLi',function(e){
+		$(e.target).closest('.listOne').children('.listLi').removeClass('checkedli');
+		$(e.target).closest('.listLi').addClass('checkedli');
+
+	})
+	
+}

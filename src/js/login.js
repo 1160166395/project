@@ -40,6 +40,7 @@ require(['config'],function(){
             var password = $password.val();
             if(one&&two){
                 $.ajax({
+                    type:'post',
                     url:'../api/login.php',
                     data:"username="+username+'&password='+password,
                     success:function(msg){

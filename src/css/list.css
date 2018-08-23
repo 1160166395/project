@@ -4,6 +4,8 @@ body { background: #fff; }
 
 #nav .left .listOne { display: none; }
 
+#nav .left:hover .listOne { display: block; }
+
 #main { background: #fff; color: #666; }
 
 #main .bread { margin-bottom: 10px; padding-top: 15px; }

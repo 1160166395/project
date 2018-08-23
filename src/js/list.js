@@ -1,17 +1,27 @@
 require(['config'],function(){
     require(['jquery','common'],function($){
-        $('#pageHeader').load('../html/header.html');
-        // $('#pageFooter').load('../html/footer.html');
+        $('#pageHeader').load('../html/header.html',function(){
+            checkedli();
+        });
+        $('#pageFooter').load('../html/footer.html',function(){
+            $('#ygguid img,#footer img').each(function(idx,item){
+                var imgurl =($(this).prop('src')).slice(31);
+                imgurl = '../'+imgurl;
+                $(this).prop('src',imgurl);
+            })
+        });
         var goodlist ={
             ele:'.productes',
             order:'.paixu .left',
             total:'.total',
+            // nav:'#nav .left',
             init(){
                 this.ele = $(this.ele);
                 this.order = $(this.order);
                 this.total = $(this.total);
                 var params = location.search;
                 this.params = params.slice(1);
+
                 //动态生成数据
                 $.ajax({
                     url:'../api/list.php',
@@ -19,24 +29,16 @@ require(['config'],function(){
                     success:function(data){
                         data = JSON.parse(data);
                         //
-                        goodlist.data = data;console.log(data)
+                        goodlist.data = data;
                         goodlist.total.text(data.length);
                         data.forEach(function(item,idx){
                             goodlist.data[idx].count = (item.sale/item.price);
-                            var html =`<li data-name=${item.id}>
-                                <div class="top"><img data-src=${item.img}/></div>
-                                <div class="bottom">
-                                    <p class="time">限时抢¥${item.sale}</p>
-                                    <p class="name">${item.name}</p>
-                                    <p class="prices"><span class="sale">¥${item.sale}</span><del class="price">¥${item.price}</del></p>
-                                </div>
-                            </li>`;
-                            var htmls = goodlist.ele.html();
-                            htmls += html;
-                            goodlist.ele.html(htmls);
-                        })
+                        });
+                        goodlist.render();
+                        //ajax异步加载，在此渲染懒加载保证有数据
                     }
                 })
+                
                 //点击事件
                 this.order.on('click','.tt',(e)=>{
                     $(e.target).parent().children().removeClass('active');
@@ -54,45 +56,50 @@ require(['config'],function(){
                 $(window).on('scroll', ()=>{//监听滚动事件
                     this.checkShow();
                 })
-                this.checkShow();
                 //商品跳转
-                this.order.on('click','li',(e)=>{
-                    location.href = 'datails.html?'+$(e.target).attr('data-name');
+                this.ele.on('click','img,.name',(e)=>{
+                    location.href = 'datails.html?'+$(e.target).closest('li').attr('data-name');
                 })
-
+               
             },
             //渲染
             render(){
                 this.ele.html('');console.log(this.data)
+                var htmls = '';
                 this.data.forEach(function(item){
                     var html =`<li data-name=${item.id}>
-                        <div class="top"><img src=${item.img} /></div>
+                        <div class="top"><img  data-src=${item.img} /></div>
                         <div class="bottom">
                             <p class="time">限时抢¥${item.sale}</p>
                             <p class="name">${item.name}</p>
                             <p class="prices"><span class="sale">¥${item.sale}</span><del class="price">¥${item.price}</del></p>
                         </div>
                     </li>`;
-                    var htmls = goodlist.ele.html();
                     htmls += html;
-                    goodlist.ele.html(htmls);
                 })
+                goodlist.ele.html(htmls);
+                //重新渲染后懒加载一次
+                this.checkShow();
             },
             //排序从大到小
             orderup(kid){
-                this.data = this.data.sort(function(a,b){
-                    if(a[kid] < b[kid]) return 1;
-                    if(a[kid] > b[kid]) return -1;
-                    return 0;
-                })
+                if(kid === 'time'){
+                    this.data = this.data.sort(function(a,b){
+                        if(a[kid] < b[kid]) return 1;
+                        if(a[kid] > b[kid]) return -1;
+                        return 0;
+                    })
+                }else{
+                    this.data = this.data.sort(function(a,b){
+                        return (b[kid] - a[kid]);
+                    })
+                }
                 this.render();
             },
             //排序从小到大
             orderdown(kid){
                 this.data = this.data.sort(function(a,b){
-                    if(a[kid] < b[kid]) return -1;
-                    if(a[kid] > b[kid]) return 1;
-                    return 0;
+                    return (a[kid] - b[kid]);
                 })
                 this.render();
             },
@@ -121,10 +128,8 @@ require(['config'],function(){
                   return false;//不在可视范围
                 }
               }
-
-
-
         }
         goodlist.init();
+        
     });
 });

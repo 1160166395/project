@@ -10,6 +10,11 @@ body{
         .listOne{
             display:none;
         }
+        &:hover{
+            .listOne{
+                display:block;
+            }
+            }
     }
 }
 #main{

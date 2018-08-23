@@ -1,6 +1,6 @@
 <?php
-$user=isset($_GET['username'])?$_GET['username']:null;
-$passw=isset($_GET['password'])?$_GET['password']:null;
+$user=isset($_POST['username'])?$_POST['username']:null;
+$passw=isset($_POST['password'])?$_POST['password']:null;
 //链接数据库
 $servername = "localhost";
 $username = "root";

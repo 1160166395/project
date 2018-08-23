@@ -11,7 +11,7 @@ gulp.task('sass',function(){
     .pipe(gulp.dest('./src/css/'))
 })
 gulp.task('autoSass',function(){
-    gulp.watch('./src/sass/*.scss',['compileSass']);
+    gulp.watch('./src/sass/*.scss',['sass']);
 })
 //自动刷新页面
 gulp.task('server',function(){

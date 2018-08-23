@@ -1,0 +1,665 @@
+@import 'var';
+body{
+    background:#fff;
+}
+.container{
+    min-width:1190px;
+}
+#nav{
+    .left{
+        .listOne{
+            display:none;
+        }
+        &:hover{
+            .listOne{
+                display:block;
+            }
+            }
+    }
+}
+#main{
+    color:#666;
+    .curLct{
+        line-height: 22px;
+        height: 22px;
+        margin:3px 0;
+        a{
+            color:#36c;
+        }
+    }
+    .goodsImg{
+        width: 482px;
+        .goodspic{
+            height: 480px;
+            border:1px solid #eaeaea;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .pic-list{
+            padding-top:11px;
+            li{
+                float:left;
+                padding:5px 3px 0 0;
+                &:last-child{
+                    padding-right:0;
+                }
+                img{
+                    padding: 2px;
+                    border: 1px solid #ddd;
+                    width: 60px;
+                    height: 60px;
+                }   
+            }
+            li.hover{
+                background:url(../img/new_dpico.png) no-repeat;
+                background-position:29px -257px;
+                img{
+                    border: 1px solid #e60012;
+                }
+            }
+        }
+    }
+    .goodsCon{
+        width: 490px;
+        margin-left:18px;
+        h1{
+            font-size:16px;
+            line-height: 28px;
+            font-weight:bold;
+        }
+        .more{
+            height: 31px;
+            line-height: 31px;
+            font-size:14px;
+            text-decoration:underline;
+            color:#36c;
+        }
+        .price{
+            padding:11px 0 20px 0;
+            height: 42px;
+            span{
+                font-size:24px;
+                color:$mainColor;
+            }
+            del{
+                margin:0 8px;
+            }
+            strong{
+                margin-left:10px;
+            }
+        }
+        .time{
+            padding:10px 0 15px 0;
+            margin-bottom:8px;
+            &::before{
+                content:'限时抢';
+                padding:0 5px 0 19px;
+                height: 16px;
+                width: 46px;
+                margin:4px 12px 0 0;
+                background:url(../img/new_dpico.png) no-repeat 0 -237px;
+                color:#fff;
+                display:inline-block;
+                text-align:center;
+            }
+        }
+        .pjia{
+            height: 31px;
+            line-height: 31px;
+            i{
+                width: 62px;
+                height: 13px;
+                margin:8px 8px 0 0;
+                background:url(../img/star.png) no-repeat 0 -100px;
+                display:inline-block;
+            }
+            .blue{
+                color:#36c;
+                margin-left:5px;
+                &:hover{
+                    color:$mainColor;
+                }
+            }
+            .right{
+                position:relative;
+                &:hover{
+                    color:$mainColor;
+                }
+                &::before{
+                    content:'';
+                    position:absolute;
+                    left:-22px;
+                    top:0;
+                    background:url(../img/new_dpico.png) no-repeat 0 -180px;
+                    width: 22px;
+                    height: 31px;
+                }
+            }
+        }
+        .gooddetail{
+            background:#f8f8f8;
+            margin-top:5px;
+            padding:22px 0 0 10px;
+            width: 480px;
+            position:relative;
+            .color{
+                span{
+                    vertical-align: top;
+                    display: inline-block;
+                }
+                img{
+                    width: 40px;
+                    height: 40px;
+                    padding:1px;
+                    border:1px solid #ddd;
+                    margin:0 0 5px 8px;
+                    &:hover{
+                        border:1px solid $mainColor;
+                    } 
+                }
+                a{
+                    position: relative;
+                    &::after{
+                        content:'';
+                        background:url(../img/new_dpico.png) no-repeat -2px -122px;
+                        position:absolute;
+                        width: 12px;
+                        height: 12px;
+                        right:0;
+                        bottom:-13px;
+                        display:none;
+                    }
+                }
+                a.active{
+                    &::after{
+                        display:block;
+                    }
+                    img{
+                        border:1px solid $mainColor;
+                    }
+                }
+            }
+            .size{
+                margin:10px 0 10px 0;
+                height: 18px;
+                line-height: 18px;
+                span{
+                    display: inline-block;
+                    width: 24px;
+                    padding:0 4px;
+                    border:1px solid #ddd;
+                    text-align:center;
+                    margin:0 5px;
+                    &:first-child{
+                        margin-left:8px;
+                    }
+                    position: relative;
+                    &::after{
+                        content:'';
+                        background:url(../img/new_dpico.png) no-repeat -2px -122px;
+                        position:absolute;
+                        width: 12px;
+                        height: 12px;
+                        right:0;
+                        bottom:0px;
+                        display:none;
+                    }
+                    &:hover{
+                        border:1px solid $mainColor;
+                    }
+                }
+                span.active{
+                    &::after{
+                        display:block;
+                    }
+                    border:1px solid $mainColor;
+                }
+            }
+            .form{
+                width: 308px;
+                height: 30px;
+                text-align:right;
+                span{
+                    background:url(../img/size.png) no-repeat;
+                    padding-left:20px;
+                    line-height: 20px;
+                    display:inline-block;
+                }
+            }
+            .num{
+                height: 25px;
+                line-height: 25px;
+                .nums{
+                    margin-right:8px;
+                }
+                .del,.add{
+                    display:inline-block;
+                    width: 11px;
+                    height: 11px;
+                    margin-top:7px;
+                    background:url(../img/jiajian.gif) no-repeat -11px 0;
+                }
+                .add{
+                    background-position:-11px -11px;
+                    margin-right:8px;
+                }
+                .number{
+                    border:1px solid #ddd;
+                    display:inline-block;
+                    width: 30px;
+                    height: 17px;
+                    vertical-align:top;
+                    margin-top:2px;
+                    input{
+                        width: 28px;
+                        height: 17px;
+                        text-align:center;
+                        vertical-align:top;
+                    }
+                }
+                .col{
+                    margin-left:8px;
+                    font-weight:bold;
+                }
+            }
+            .gobuy{
+                padding-top:20px;
+                padding-bottom:10px;
+                .buyNow,.cart{
+                    height: 35px;
+                    line-height: 35px;
+                    text-align:center;
+                }
+                .buyNow{
+                    border:1px solid $mainColor;
+                    width: 121px;
+                    background:#fff;
+                    margin-right:10px;
+                }
+                .cart{
+                    width: 147px;
+                    border:1px solid #d90d0d;
+                    color:#fff;
+                    background:$mainColor;
+                    margin-right:8px;
+                }
+                .syis{
+                    margin-top:6px;
+                    padding-right:4px;
+                    background:url(../img/triangle.png) no-repeat right bottom;
+                    span{
+                        display:block;
+                    }
+                }
+            }
+            .erweima{
+                position:absolute;
+                right:0;
+                bottom:10px;
+                text-align:center;
+                width: 108px;
+                img{
+                    width: 90px;
+                    height: 90px;
+                }
+            }
+        }
+        .shopName{
+            span{
+                color:#333;
+            }
+        }
+        .promise{
+            padding:6px 0 6px 10px;
+            height: 22px;
+            line-height: 22px;
+            color:#999;
+            h5{
+                font-weight:bold;
+                float:left;
+            }
+            li{
+                float:left;
+                margin-left:44px;
+                padding-left:22px;
+                position:relative;
+                &::before{
+                    width: 20px;
+                    height: 22px;
+                    content:'';
+                    position:absolute;
+                    background:url(../img/new_dpico.png) no-repeat 0 -210px;
+                    left:0;
+                    top:0;
+                }
+            }
+            ul{
+                li:nth-child(2){
+                    &::before{
+                        background-position:-22px -210px;
+                    }        
+                }
+                li:nth-child(2){
+                    &::before{
+                        background-position:-44px -210px;
+                    }  
+                }
+            }
+        }
+    }
+    .look{
+        // height: 615px;
+        padding-bottom:38px;
+        width: 185px;
+        .look_ht{
+            text-align:center;
+            height: 16px;
+            line-height: 16px;
+            position:relative;
+            i{
+                border-top: 1px dotted #c9c9c9;
+                height: 0;
+                left: 22px;
+                position: absolute;
+                text-decoration: none;
+                top: 10px;
+                width: 140px;
+            }
+            span{
+                line-height: 18px;
+                background-color: #fff;
+                color: #999;
+                left: 50%;
+                margin-left: -3em;
+                position: absolute;
+                text-align: center;
+                top: 0;
+                width: 6em;
+            }
+        }
+        .look_good{
+            padding: 10px 23px 2px 22px;
+            position: relative;
+            li{
+                img{
+                    width: 140px;
+                    height: 140px;
+                }
+                p{
+                    overflow:hidden;
+                }
+                span{
+                    line-height: 20px;
+                    &:hover{
+                        color:$mainColor;
+                    }
+                }
+                margin-bottom:14px;
+            }
+            .btn{
+                padding:0 25px;
+            }
+            .prev{
+                cursor: pointer;
+                float:left;
+                height: 27px;
+                width: 27px;
+                background:url(../img/new_dpico.png) no-repeat -226px -157px;
+            }
+            .next{
+                cursor: pointer;
+                float:right;
+                height: 27px;
+                width: 27px;
+                background:url(../img/new_dpico.png) no-repeat -226px -184px;
+            }
+        }
+        
+    }
+}
+#otherGoods{
+    .container{
+        border:1px solid #ccc;
+        color:#666;
+        position:relative;
+    }
+    h3{
+        line-height: 22px;
+        height: 22px;
+        font-size:14px;
+        font-weight:bold;
+    }
+    .prev{
+        width: 12px;
+        height: 22px;
+        position: absolute;
+        top: 124px;
+        left:7px;
+        cursor: pointer;
+        background:url(../img/sf-ico.png) no-repeat 0 -71px;
+    }
+    .next{
+        width: 12px;
+        height: 22px;
+        position: absolute;
+        top: 124px;
+        right:7px;
+        cursor: pointer;
+        background:url(../img/sf-ico.png) no-repeat -13px -71px;
+    }
+    ul{
+
+    }
+    li{
+        width: 176px;
+        height: 270px;
+        padding: 0 5px;
+        position: relative;
+        padding-left: 15px;
+        float:left;
+        img{
+            width: 160px;
+            height: 160px;
+        }
+        .tit{
+            line-height: 21px;
+        }
+        .price_sc{
+            line-height: 20px;
+            span{
+                color:$mainColor;
+                margin-right:8px;
+                font-size:16px;
+                font-weight:bold;
+            }
+        }
+    }
+
+}
+#buy_nav{
+    display:none;
+    height: 68px;
+    position:fixed;
+    bottom:0;
+    width: 100%;
+    z-index:2000;
+    .left,.right{
+        position:absolute;
+        width: 50%;
+        top:0;
+        p{
+            background:#d1d1d1;
+            height: 44px;
+        }
+    }
+    .left{
+        left:0;
+        p{
+            margin-right:513px;
+            position:relative;
+            &::before{
+                width: 32px;
+                height: 62px;
+                background:url(../img/bot_buy_sprite.gif) no-repeat 0 0;
+                position:absolute;
+                content:'';
+                right:0;
+            }
+        }
+    }
+    .right{
+        right:0;
+        p{
+            margin-left:513px;
+            &::before{
+                width: 32px;
+                height: 62px;
+                background:url(../img/bot_buy_sprite.gif) no-repeat -32px 0;
+                position:absolute;
+                content:'';
+            }
+        }
+    }
+    .content{
+        margin:0 auto;
+        background: #fffdf4;
+        border: 1px solid #ededed;
+        width: 1043px;
+        padding: 11px 0 10px 19px;
+        position: absolute;
+        top: 9px;
+        right:0px;
+        left: 0px;
+        z-index: 1500;
+        height: 38px;
+        color:#666;
+        &::before{
+            width: 67px;
+            height: 17px;
+            background:url(../img/bot_buy_sprite.gif) no-repeat 0px -144px;
+            position:absolute;
+            content:'';
+            right:0;
+            bottom:0;
+        }
+        &::after{
+            width: 14px;
+            height: 14px;
+            background:url(../img/bot_buy_sprite.gif) no-repeat -67px -52px;
+            position:absolute;
+            content:'';
+            right:5px;
+            top:5px;
+            cursor: pointer;
+        }
+        .num{
+            height: 25px;
+            line-height: 25px;
+            margin-top:3px;
+            .nums{
+                margin-right:8px;
+            }
+            .del,.add{
+                display:inline-block;
+                width: 11px;
+                height: 11px;
+                margin-top:7px;
+                background:url(../img/jiajian.gif) no-repeat -11px 0;
+            }
+            .add{
+                background-position:-11px -11px;
+                margin-right:8px;
+            }
+            .number{
+                border:1px solid #ddd;
+                display:inline-block;
+                width: 30px;
+                height: 17px;
+                vertical-align:top;
+                margin-top:2px;
+                input{
+                    width: 28px;
+                    height: 17px;
+                    text-align:center;
+                    vertical-align:top;
+                }
+            }
+            .col{
+                margin-left:8px;
+                font-weight:bold;
+            }
+        }
+        .size{
+            margin:3px 355px 17px 0;
+            height: 18px;
+            line-height: 18px;
+            span{
+                display: inline-block;
+                width: 24px;
+                padding:0 4px;
+                border:1px solid #ddd;
+                text-align:center;
+                margin:0 5px;
+                &:first-child{
+                    margin-left:8px;
+                }
+                position: relative;
+                &::after{
+                    content:'';
+                    background:url(../img/new_dpico.png) no-repeat -2px -122px;
+                    position:absolute;
+                    width: 12px;
+                    height: 12px;
+                    right:0;
+                    bottom:0px;
+                    display:none;
+                }
+                &:hover{
+                    border:1px solid $mainColor;
+                }
+            }
+            span.active{
+                &::after{
+                    display:block;
+                }
+                border:1px solid $mainColor;
+            }
+        }
+        .buyNow,.cart{
+            height: 26px;
+            line-height: 26px;
+            text-align:center;
+            border-radius:3px;
+        }
+        .buyNow{
+            border:1px solid $mainColor;
+            width: 88px;
+            background:#fff;
+            margin-right:20px;
+            margin-left:20px;
+        }
+        .cart{
+            width: 100px;
+            border:1px solid #d90d0d;
+            color:#fff;
+            background:$mainColor;
+        }
+    }
+}
+#goTop{
+    position:fixed;
+    right:0;
+    bottom:20px;
+    z-index:2000;
+    background:#fff;
+    a{
+        padding:8px;
+        border:1px solid #ccc;
+        width: 26px;
+        height: 26px;
+        display:block;
+        background:url(../img/gotop-lnk.png) no-repeat center center;
+    }
+}

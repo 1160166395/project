@@ -14,7 +14,11 @@ if($conn->connect_error){
 }
 $conn->set_charset('utf-8');
 // $sql = "select * from data ORDER BY  rand() LIMIT 3";
-$sql = "select * from goods where type = '$type'";
+if($type != 'spt'&&$type != 'nvx'&&$type != 'out'&&$type != 'nanx'&&$type != 'kids'&&$type != 'bao'){
+    $sql = "select * from goods";
+}else{
+    $sql = "select * from goods where type = '$type'";
+}
 //获取查询结果
 $result = $conn->query($sql);
 // var_dump($result);

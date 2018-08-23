@@ -1,0 +1,248 @@
+@charset "UTF-8";
+body { background: #fff; }
+
+.container { min-width: 1190px; }
+
+#nav .left .listOne { display: none; }
+
+#nav .left:hover .listOne { display: block; }
+
+#main { color: #666; }
+
+#main .curLct { line-height: 22px; height: 22px; margin: 3px 0; }
+
+#main .curLct a { color: #36c; }
+
+#main .goodsImg { width: 482px; }
+
+#main .goodsImg .goodspic { height: 480px; border: 1px solid #eaeaea; }
+
+#main .goodsImg .goodspic img { width: 100%; height: 100%; }
+
+#main .goodsImg .pic-list { padding-top: 11px; }
+
+#main .goodsImg .pic-list li { float: left; padding: 5px 3px 0 0; }
+
+#main .goodsImg .pic-list li:last-child { padding-right: 0; }
+
+#main .goodsImg .pic-list li img { padding: 2px; border: 1px solid #ddd; width: 60px; height: 60px; }
+
+#main .goodsImg .pic-list li.hover { background: url(../img/new_dpico.png) no-repeat; background-position: 29px -257px; }
+
+#main .goodsImg .pic-list li.hover img { border: 1px solid #e60012; }
+
+#main .goodsCon { width: 490px; margin-left: 18px; }
+
+#main .goodsCon h1 { font-size: 16px; line-height: 28px; font-weight: bold; }
+
+#main .goodsCon .more { height: 31px; line-height: 31px; font-size: 14px; text-decoration: underline; color: #36c; }
+
+#main .goodsCon .price { padding: 11px 0 20px 0; height: 42px; }
+
+#main .goodsCon .price span { font-size: 24px; color: #e60012; }
+
+#main .goodsCon .price del { margin: 0 8px; }
+
+#main .goodsCon .price strong { margin-left: 10px; }
+
+#main .goodsCon .time { padding: 10px 0 15px 0; margin-bottom: 8px; }
+
+#main .goodsCon .time::before { content: '限时抢'; padding: 0 5px 0 19px; height: 16px; width: 46px; margin: 4px 12px 0 0; background: url(../img/new_dpico.png) no-repeat 0 -237px; color: #fff; display: inline-block; text-align: center; }
+
+#main .goodsCon .pjia { height: 31px; line-height: 31px; }
+
+#main .goodsCon .pjia i { width: 62px; height: 13px; margin: 8px 8px 0 0; background: url(../img/star.png) no-repeat 0 -100px; display: inline-block; }
+
+#main .goodsCon .pjia .blue { color: #36c; margin-left: 5px; }
+
+#main .goodsCon .pjia .blue:hover { color: #e60012; }
+
+#main .goodsCon .pjia .right { position: relative; }
+
+#main .goodsCon .pjia .right:hover { color: #e60012; }
+
+#main .goodsCon .pjia .right::before { content: ''; position: absolute; left: -22px; top: 0; background: url(../img/new_dpico.png) no-repeat 0 -180px; width: 22px; height: 31px; }
+
+#main .goodsCon .gooddetail { background: #f8f8f8; margin-top: 5px; padding: 22px 0 0 10px; width: 480px; position: relative; }
+
+#main .goodsCon .gooddetail .color span { vertical-align: top; display: inline-block; }
+
+#main .goodsCon .gooddetail .color img { width: 40px; height: 40px; padding: 1px; border: 1px solid #ddd; margin: 0 0 5px 8px; }
+
+#main .goodsCon .gooddetail .color img:hover { border: 1px solid #e60012; }
+
+#main .goodsCon .gooddetail .color a { position: relative; }
+
+#main .goodsCon .gooddetail .color a::after { content: ''; background: url(../img/new_dpico.png) no-repeat -2px -122px; position: absolute; width: 12px; height: 12px; right: 0; bottom: -13px; display: none; }
+
+#main .goodsCon .gooddetail .color a.active::after { display: block; }
+
+#main .goodsCon .gooddetail .color a.active img { border: 1px solid #e60012; }
+
+#main .goodsCon .gooddetail .size { margin: 10px 0 10px 0; height: 18px; line-height: 18px; }
+
+#main .goodsCon .gooddetail .size span { display: inline-block; width: 24px; padding: 0 4px; border: 1px solid #ddd; text-align: center; margin: 0 5px; position: relative; }
+
+#main .goodsCon .gooddetail .size span:first-child { margin-left: 8px; }
+
+#main .goodsCon .gooddetail .size span::after { content: ''; background: url(../img/new_dpico.png) no-repeat -2px -122px; position: absolute; width: 12px; height: 12px; right: 0; bottom: 0px; display: none; }
+
+#main .goodsCon .gooddetail .size span:hover { border: 1px solid #e60012; }
+
+#main .goodsCon .gooddetail .size span.active { border: 1px solid #e60012; }
+
+#main .goodsCon .gooddetail .size span.active::after { display: block; }
+
+#main .goodsCon .gooddetail .form { width: 308px; height: 30px; text-align: right; }
+
+#main .goodsCon .gooddetail .form span { background: url(../img/size.png) no-repeat; padding-left: 20px; line-height: 20px; display: inline-block; }
+
+#main .goodsCon .gooddetail .num { height: 25px; line-height: 25px; }
+
+#main .goodsCon .gooddetail .num .nums { margin-right: 8px; }
+
+#main .goodsCon .gooddetail .num .del, #main .goodsCon .gooddetail .num .add { display: inline-block; width: 11px; height: 11px; margin-top: 7px; background: url(../img/jiajian.gif) no-repeat -11px 0; }
+
+#main .goodsCon .gooddetail .num .add { background-position: -11px -11px; margin-right: 8px; }
+
+#main .goodsCon .gooddetail .num .number { border: 1px solid #ddd; display: inline-block; width: 30px; height: 17px; vertical-align: top; margin-top: 2px; }
+
+#main .goodsCon .gooddetail .num .number input { width: 28px; height: 17px; text-align: center; vertical-align: top; }
+
+#main .goodsCon .gooddetail .num .col { margin-left: 8px; font-weight: bold; }
+
+#main .goodsCon .gooddetail .gobuy { padding-top: 20px; padding-bottom: 10px; }
+
+#main .goodsCon .gooddetail .gobuy .buyNow, #main .goodsCon .gooddetail .gobuy .cart { height: 35px; line-height: 35px; text-align: center; }
+
+#main .goodsCon .gooddetail .gobuy .buyNow { border: 1px solid #e60012; width: 121px; background: #fff; margin-right: 10px; }
+
+#main .goodsCon .gooddetail .gobuy .cart { width: 147px; border: 1px solid #d90d0d; color: #fff; background: #e60012; margin-right: 8px; }
+
+#main .goodsCon .gooddetail .gobuy .syis { margin-top: 6px; padding-right: 4px; background: url(../img/triangle.png) no-repeat right bottom; }
+
+#main .goodsCon .gooddetail .gobuy .syis span { display: block; }
+
+#main .goodsCon .gooddetail .erweima { position: absolute; right: 0; bottom: 10px; text-align: center; width: 108px; }
+
+#main .goodsCon .gooddetail .erweima img { width: 90px; height: 90px; }
+
+#main .goodsCon .shopName span { color: #333; }
+
+#main .goodsCon .promise { padding: 6px 0 6px 10px; height: 22px; line-height: 22px; color: #999; }
+
+#main .goodsCon .promise h5 { font-weight: bold; float: left; }
+
+#main .goodsCon .promise li { float: left; margin-left: 44px; padding-left: 22px; position: relative; }
+
+#main .goodsCon .promise li::before { width: 20px; height: 22px; content: ''; position: absolute; background: url(../img/new_dpico.png) no-repeat 0 -210px; left: 0; top: 0; }
+
+#main .goodsCon .promise ul li:nth-child(2)::before { background-position: -22px -210px; }
+
+#main .goodsCon .promise ul li:nth-child(2)::before { background-position: -44px -210px; }
+
+#main .look { padding-bottom: 38px; width: 185px; }
+
+#main .look .look_ht { text-align: center; height: 16px; line-height: 16px; position: relative; }
+
+#main .look .look_ht i { border-top: 1px dotted #c9c9c9; height: 0; left: 22px; position: absolute; text-decoration: none; top: 10px; width: 140px; }
+
+#main .look .look_ht span { line-height: 18px; background-color: #fff; color: #999; left: 50%; margin-left: -3em; position: absolute; text-align: center; top: 0; width: 6em; }
+
+#main .look .look_good { padding: 10px 23px 2px 22px; position: relative; }
+
+#main .look .look_good li { margin-bottom: 14px; }
+
+#main .look .look_good li img { width: 140px; height: 140px; }
+
+#main .look .look_good li p { overflow: hidden; }
+
+#main .look .look_good li span { line-height: 20px; }
+
+#main .look .look_good li span:hover { color: #e60012; }
+
+#main .look .look_good .btn { padding: 0 25px; }
+
+#main .look .look_good .prev { cursor: pointer; float: left; height: 27px; width: 27px; background: url(../img/new_dpico.png) no-repeat -226px -157px; }
+
+#main .look .look_good .next { cursor: pointer; float: right; height: 27px; width: 27px; background: url(../img/new_dpico.png) no-repeat -226px -184px; }
+
+#otherGoods .container { border: 1px solid #ccc; color: #666; position: relative; }
+
+#otherGoods h3 { line-height: 22px; height: 22px; font-size: 14px; font-weight: bold; }
+
+#otherGoods .prev { width: 12px; height: 22px; position: absolute; top: 124px; left: 7px; cursor: pointer; background: url(../img/sf-ico.png) no-repeat 0 -71px; }
+
+#otherGoods .next { width: 12px; height: 22px; position: absolute; top: 124px; right: 7px; cursor: pointer; background: url(../img/sf-ico.png) no-repeat -13px -71px; }
+
+#otherGoods li { width: 176px; height: 270px; padding: 0 5px; position: relative; padding-left: 15px; float: left; }
+
+#otherGoods li img { width: 160px; height: 160px; }
+
+#otherGoods li .tit { line-height: 21px; }
+
+#otherGoods li .price_sc { line-height: 20px; }
+
+#otherGoods li .price_sc span { color: #e60012; margin-right: 8px; font-size: 16px; font-weight: bold; }
+
+#buy_nav { display: none; height: 68px; position: fixed; bottom: 0; width: 100%; z-index: 2000; }
+
+#buy_nav .left, #buy_nav .right { position: absolute; width: 50%; top: 0; }
+
+#buy_nav .left p, #buy_nav .right p { background: #d1d1d1; height: 44px; }
+
+#buy_nav .left { left: 0; }
+
+#buy_nav .left p { margin-right: 513px; position: relative; }
+
+#buy_nav .left p::before { width: 32px; height: 62px; background: url(../img/bot_buy_sprite.gif) no-repeat 0 0; position: absolute; content: ''; right: 0; }
+
+#buy_nav .right { right: 0; }
+
+#buy_nav .right p { margin-left: 513px; }
+
+#buy_nav .right p::before { width: 32px; height: 62px; background: url(../img/bot_buy_sprite.gif) no-repeat -32px 0; position: absolute; content: ''; }
+
+#buy_nav .content { margin: 0 auto; background: #fffdf4; border: 1px solid #ededed; width: 1043px; padding: 11px 0 10px 19px; position: absolute; top: 9px; right: 0px; left: 0px; z-index: 1500; height: 38px; color: #666; }
+
+#buy_nav .content::before { width: 67px; height: 17px; background: url(../img/bot_buy_sprite.gif) no-repeat 0px -144px; position: absolute; content: ''; right: 0; bottom: 0; }
+
+#buy_nav .content::after { width: 14px; height: 14px; background: url(../img/bot_buy_sprite.gif) no-repeat -67px -52px; position: absolute; content: ''; right: 5px; top: 5px; cursor: pointer; }
+
+#buy_nav .content .num { height: 25px; line-height: 25px; margin-top: 3px; }
+
+#buy_nav .content .num .nums { margin-right: 8px; }
+
+#buy_nav .content .num .del, #buy_nav .content .num .add { display: inline-block; width: 11px; height: 11px; margin-top: 7px; background: url(../img/jiajian.gif) no-repeat -11px 0; }
+
+#buy_nav .content .num .add { background-position: -11px -11px; margin-right: 8px; }
+
+#buy_nav .content .num .number { border: 1px solid #ddd; display: inline-block; width: 30px; height: 17px; vertical-align: top; margin-top: 2px; }
+
+#buy_nav .content .num .number input { width: 28px; height: 17px; text-align: center; vertical-align: top; }
+
+#buy_nav .content .num .col { margin-left: 8px; font-weight: bold; }
+
+#buy_nav .content .size { margin: 3px 355px 17px 0; height: 18px; line-height: 18px; }
+
+#buy_nav .content .size span { display: inline-block; width: 24px; padding: 0 4px; border: 1px solid #ddd; text-align: center; margin: 0 5px; position: relative; }
+
+#buy_nav .content .size span:first-child { margin-left: 8px; }
+
+#buy_nav .content .size span::after { content: ''; background: url(../img/new_dpico.png) no-repeat -2px -122px; position: absolute; width: 12px; height: 12px; right: 0; bottom: 0px; display: none; }
+
+#buy_nav .content .size span:hover { border: 1px solid #e60012; }
+
+#buy_nav .content .size span.active { border: 1px solid #e60012; }
+
+#buy_nav .content .size span.active::after { display: block; }
+
+#buy_nav .content .buyNow, #buy_nav .content .cart { height: 26px; line-height: 26px; text-align: center; border-radius: 3px; }
+
+#buy_nav .content .buyNow { border: 1px solid #e60012; width: 88px; background: #fff; margin-right: 20px; margin-left: 20px; }
+
+#buy_nav .content .cart { width: 100px; border: 1px solid #d90d0d; color: #fff; background: #e60012; }
+
+#goTop { position: fixed; right: 0; bottom: 20px; z-index: 2000; background: #fff; }
+
+#goTop a { padding: 8px; border: 1px solid #ccc; width: 26px; height: 26px; display: block; background: url(../img/gotop-lnk.png) no-repeat center center; }
