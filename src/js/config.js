@@ -10,6 +10,7 @@ require.config({
         // 配置模块间依赖关系
         // 讲明：lxzoom依赖jquery（加载过程中自动处理先后顺序）
         'zadzoom':['jquery'],
-        'common':['jquery']
+        'common':['jquery'],
+        'zadzoom':['common']
     }
 });

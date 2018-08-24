@@ -58,7 +58,7 @@ body { background: #fff; }
 
 #main .productes li .bottom .time { height: 16px; line-height: 16px; color: #fff; background: #f0a1a1; padding-left: 4px; }
 
-#main .productes li .bottom .name { height: 43px; cursor: pointer; line-height: 20px; }
+#main .productes li .bottom .name { height: 43px; cursor: pointer; }
 
 #main .productes li .bottom .name:hover { color: #e60012; }
 

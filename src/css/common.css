@@ -289,3 +289,7 @@ body { background: #f8f8f8; }
 #bot .right ul li:nth-child(3) a { background: url(../img/beian1.png) no-repeat; }
 
 #bot .right ul li:nth-child(4) a { background: url(../img/beian2.png) no-repeat; }
+
+#goTop { display: none; position: fixed; right: 0; bottom: 20px; z-index: 2000; background: #fff; }
+
+#goTop a { padding: 8px; border: 1px solid #ccc; width: 26px; height: 26px; display: block; background: url(../img/gotop-lnk.png) no-repeat center center; }

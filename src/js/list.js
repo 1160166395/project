@@ -14,7 +14,7 @@ require(['config'],function(){
             ele:'.productes',
             order:'.paixu .left',
             total:'.total',
-            // nav:'#nav .left',
+            go:'#goTop',
             init(){
                 this.ele = $(this.ele);
                 this.order = $(this.order);
@@ -58,8 +58,17 @@ require(['config'],function(){
                 })
                 //商品跳转
                 this.ele.on('click','img,.name',(e)=>{
-                    location.href = 'datails.html?'+$(e.target).closest('li').attr('data-name');
+                    location.href = 'details.html?'+$(e.target).closest('li').attr('data-name');
                 })
+                //悬浮的商品选择
+                this.go = $(this.go);
+                window.onscroll = ()=>{
+                    if(scrollY>200){
+                        this.go.css('display','block');
+                    }else{
+                        this.go.css('display','none')
+                    }
+                }
                
             },
             //渲染
@@ -114,10 +123,12 @@ require(['config'],function(){
                     };
                 });
             },
+            //显示图片
             showImg($el){
                 $el.attr('src', $el.attr('data-src'));
                 $el.data('isloaded',true);
             },
+            //判断是否显示
             isShow($el){
               var winH = $(window).height(),//获取窗口高度
                     scrollH = $(window).scrollTop(),//获取窗口滚动高度

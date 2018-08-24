@@ -261,6 +261,8 @@ body{
                 }
                 .col{
                     margin-left:8px;
+                }
+                .col,.siz{
                     font-weight:bold;
                 }
             }
@@ -554,7 +556,7 @@ body{
             top:5px;
             cursor: pointer;
         }
-        .num{
+        .num-nav{
             height: 25px;
             line-height: 25px;
             margin-top:3px;
@@ -588,13 +590,16 @@ body{
             }
             .col{
                 margin-left:8px;
+            }
+            .siz,.col{
                 font-weight:bold;
             }
         }
-        .size{
-            margin:3px 355px 17px 0;
+        .size-nav{
+            margin:3px 0px 17px 0;
             height: 18px;
             line-height: 18px;
+            width: 511px;
             span{
                 display: inline-block;
                 width: 24px;
@@ -646,20 +651,5 @@ body{
             color:#fff;
             background:$mainColor;
         }
-    }
-}
-#goTop{
-    position:fixed;
-    right:0;
-    bottom:20px;
-    z-index:2000;
-    background:#fff;
-    a{
-        padding:8px;
-        border:1px solid #ccc;
-        width: 26px;
-        height: 26px;
-        display:block;
-        background:url(../img/gotop-lnk.png) no-repeat center center;
     }
 }

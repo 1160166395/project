@@ -1,6 +1,6 @@
 .container { min-width: 1190px; }
 
-.carouls { height: 480px; }
+.carouls { height: 480px; margin-left: 200px; }
 
 .hotBrand .top { border-bottom: 3px #000 solid; font-size: 17px; margin-top: 30px; line-height: 34px; }
 

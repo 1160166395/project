@@ -109,7 +109,9 @@ body { background: #fff; }
 
 #main .goodsCon .gooddetail .num .number input { width: 28px; height: 17px; text-align: center; vertical-align: top; }
 
-#main .goodsCon .gooddetail .num .col { margin-left: 8px; font-weight: bold; }
+#main .goodsCon .gooddetail .num .col { margin-left: 8px; }
+
+#main .goodsCon .gooddetail .num .col, #main .goodsCon .gooddetail .num .siz { font-weight: bold; }
 
 #main .goodsCon .gooddetail .gobuy { padding-top: 20px; padding-bottom: 10px; }
 
@@ -209,40 +211,38 @@ body { background: #fff; }
 
 #buy_nav .content::after { width: 14px; height: 14px; background: url(../img/bot_buy_sprite.gif) no-repeat -67px -52px; position: absolute; content: ''; right: 5px; top: 5px; cursor: pointer; }
 
-#buy_nav .content .num { height: 25px; line-height: 25px; margin-top: 3px; }
+#buy_nav .content .num-nav { height: 25px; line-height: 25px; margin-top: 3px; }
 
-#buy_nav .content .num .nums { margin-right: 8px; }
+#buy_nav .content .num-nav .nums { margin-right: 8px; }
 
-#buy_nav .content .num .del, #buy_nav .content .num .add { display: inline-block; width: 11px; height: 11px; margin-top: 7px; background: url(../img/jiajian.gif) no-repeat -11px 0; }
+#buy_nav .content .num-nav .del, #buy_nav .content .num-nav .add { display: inline-block; width: 11px; height: 11px; margin-top: 7px; background: url(../img/jiajian.gif) no-repeat -11px 0; }
 
-#buy_nav .content .num .add { background-position: -11px -11px; margin-right: 8px; }
+#buy_nav .content .num-nav .add { background-position: -11px -11px; margin-right: 8px; }
 
-#buy_nav .content .num .number { border: 1px solid #ddd; display: inline-block; width: 30px; height: 17px; vertical-align: top; margin-top: 2px; }
+#buy_nav .content .num-nav .number { border: 1px solid #ddd; display: inline-block; width: 30px; height: 17px; vertical-align: top; margin-top: 2px; }
 
-#buy_nav .content .num .number input { width: 28px; height: 17px; text-align: center; vertical-align: top; }
+#buy_nav .content .num-nav .number input { width: 28px; height: 17px; text-align: center; vertical-align: top; }
 
-#buy_nav .content .num .col { margin-left: 8px; font-weight: bold; }
+#buy_nav .content .num-nav .col { margin-left: 8px; }
 
-#buy_nav .content .size { margin: 3px 355px 17px 0; height: 18px; line-height: 18px; }
+#buy_nav .content .num-nav .siz, #buy_nav .content .num-nav .col { font-weight: bold; }
 
-#buy_nav .content .size span { display: inline-block; width: 24px; padding: 0 4px; border: 1px solid #ddd; text-align: center; margin: 0 5px; position: relative; }
+#buy_nav .content .size-nav { margin: 3px 0px 17px 0; height: 18px; line-height: 18px; width: 511px; }
 
-#buy_nav .content .size span:first-child { margin-left: 8px; }
+#buy_nav .content .size-nav span { display: inline-block; width: 24px; padding: 0 4px; border: 1px solid #ddd; text-align: center; margin: 0 5px; position: relative; }
 
-#buy_nav .content .size span::after { content: ''; background: url(../img/new_dpico.png) no-repeat -2px -122px; position: absolute; width: 12px; height: 12px; right: 0; bottom: 0px; display: none; }
+#buy_nav .content .size-nav span:first-child { margin-left: 8px; }
 
-#buy_nav .content .size span:hover { border: 1px solid #e60012; }
+#buy_nav .content .size-nav span::after { content: ''; background: url(../img/new_dpico.png) no-repeat -2px -122px; position: absolute; width: 12px; height: 12px; right: 0; bottom: 0px; display: none; }
 
-#buy_nav .content .size span.active { border: 1px solid #e60012; }
+#buy_nav .content .size-nav span:hover { border: 1px solid #e60012; }
 
-#buy_nav .content .size span.active::after { display: block; }
+#buy_nav .content .size-nav span.active { border: 1px solid #e60012; }
+
+#buy_nav .content .size-nav span.active::after { display: block; }
 
 #buy_nav .content .buyNow, #buy_nav .content .cart { height: 26px; line-height: 26px; text-align: center; border-radius: 3px; }
 
 #buy_nav .content .buyNow { border: 1px solid #e60012; width: 88px; background: #fff; margin-right: 20px; margin-left: 20px; }
 
 #buy_nav .content .cart { width: 100px; border: 1px solid #d90d0d; color: #fff; background: #e60012; }
-
-#goTop { position: fixed; right: 0; bottom: 20px; z-index: 2000; background: #fff; }
-
-#goTop a { padding: 8px; border: 1px solid #ccc; width: 26px; height: 26px; display: block; background: url(../img/gotop-lnk.png) no-repeat center center; }

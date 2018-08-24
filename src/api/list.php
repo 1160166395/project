@@ -1,18 +1,8 @@
 <?php
+// 引入connect.php
+include 'connect.php';
 header('Content-Type:text/html; charset=UTF-8');
 $type=isset($_GET['type'])?$_GET['type']:null;
-//链接数据库
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "yougou";
-//创建链接
-$conn = new mysqli($servername,$username,$password,$dbname);
-//判断链接是否成功
-if($conn->connect_error){
-    die('链接失败：'.$conn->connect_error);
-}
-$conn->set_charset('utf-8');
 // $sql = "select * from data ORDER BY  rand() LIMIT 3";
 if($type != 'spt'&&$type != 'nvx'&&$type != 'out'&&$type != 'nanx'&&$type != 'kids'&&$type != 'bao'){
     $sql = "select * from goods";
