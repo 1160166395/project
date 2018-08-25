@@ -392,3 +392,56 @@ function type(data){
 	})
 	
 }
+function update(){
+	$ul = $('.smallCart .shopGoods');
+	$total = $('.smallCart .total');
+	if(Cookie.get('goodlist') != '[]' && Cookie.get('goodlist') != ''){
+		$ul.css('display','block');
+        $total.css('display','block');
+        $('.smallCart .kon').css('display','none');
+        let topCart = $.parseJSON(Cookie.get('goodlist'));
+        $ul.html('');
+        var html ='';
+        var sum = 0;
+        var total = 0;
+        $.each(topCart,function(idx,item){
+        	html += ` <li class="clearfix" data-name=${item.id} data-color=${item.color} data-size=${item.size}>
+                        <div class="fl">
+                            <img src=${item.imgurl} alt="" />
+                        </div>
+                        <div class="name fl">${item.name}</div>
+                        <div class="fr">
+                            <p><span class="sale red">￥${item.sale}</span>*${item.qty}</p>
+                            <p class="del">删除</p>
+                        </div>
+                    </li>`;
+           	sum+=(item.qty*1);
+           	total+=(item.qty*item.sale)
+        })
+        $ul.html(html);
+        $('.smallCart .total .sum').text(sum);
+        $('#logo .shopCart .qty').text(sum);
+        $('.smallCart .total .totals').text('￥'+total);
+    }else{
+        $ul.css('display','none');
+        $total.css('display','none');
+        $('.smallCart .kon').css('display','block');
+    }
+}
+function delet(){
+	$ul = $('.smallCart .shopGoods');
+	$ul.on('click','.del',function(){
+		var data= $.parseJSON(Cookie.get('goodlist'));
+        var index;
+        $.each(data,(idx,item)=>{
+            var currentLi = $(this).closest('li');
+            if(item.id === currentLi.attr('data-name') && item.color === currentLi.attr('data-color') && item.size === currentLi.attr('data-size')){
+                index = idx;
+            }
+        });
+        data.splice(index,1);
+        Cookie.set('goodlist',JSON.stringify(data));
+        update();
+
+   	})
+}

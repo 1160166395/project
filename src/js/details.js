@@ -1,7 +1,12 @@
 require(['config'],function(){
     require(['jquery','common','zadzoom'],function($){
         $('#pageHeader').load('../html/header.html',function(){
+            //二级导航栏效果
             checkedli();
+            //更新小购物车
+            update();
+            //小购物车删除
+            delet()
         });
         $('#pageFooter').load('../html/footer.html',function(){
             //保障图片路径正确
@@ -17,6 +22,7 @@ require(['config'],function(){
             num:'.number input',
             nav:'#buy_nav',
             go:'#goTop',
+            //初始化
             init(){
                 var params = location.search.slice(1);
                 this.params = params;
@@ -169,7 +175,7 @@ require(['config'],function(){
                 $('.size-nav').html($('.size-nav').html()+size)
                 $('.good').html(html);
                 //倒计时
-                var starttime = new Date("2018/8/30");
+                var starttime = new Date("2018/9/30");
                 showTime();
                 var timer = setInterval(showTime, 1000);
                 function showTime() {
@@ -249,6 +255,8 @@ require(['config'],function(){
                 })
                 $('.cart').on('click',()=>{
                     this.addCart();
+                    //更新小购物车
+                    update();
                 })
             },
             //加入cookie
@@ -262,7 +270,6 @@ require(['config'],function(){
                 gooddata.color   = this.color.eq(0).text();
                 gooddata.qty    = this.num.val();
                 gooddata.size   = this.size.eq(0).text();
-                // gooddata.total = gooddata.qty*gooddata.sale;console.log(gooddata)
                 if(Cookie.get('goodlist') == '[]' || Cookie.get('goodlist') == ''){
                     goodsdata.push(gooddata);
                     goodsdata = JSON.stringify(goodsdata);
@@ -271,7 +278,7 @@ require(['config'],function(){
                     var gooddetail = Cookie.get('goodlist');
                     gooddetail = JSON.parse(gooddetail);
                     gooddetail.forEach(function(item,idx){
-                       if(item.id === gooddata.id&&item.color===gooddata.color){
+                       if(item.id === gooddata.id&&item.color===gooddata.color&&item.size===gooddata.size){
                         gooddata.qty = item.qty*1 + gooddata.qty*1;
                         gooddetail.splice(idx,1)
                         return;

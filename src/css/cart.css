@@ -12,19 +12,19 @@ body { background: #fff; }
 
 #cartlogo .left { text-indent: -1000px; background: url(../img/carlogo.png) no-repeat; width: 355px; height: 50px; }
 
+#cartlogo .left a { display: block; width: 100%; height: 100%; }
+
 #cart .container { border: 1px solid #EEEEEE; border-bottom: 0 none; box-sizing: border-box; }
 
 #cart .head { color: #AAAAAA; line-height: 42px; height: 42px; border-bottom: 1px solid #eee; }
 
 #cart .head p { display: inline-block; height: 42px; line-height: 42px; text-align: center; }
 
-#cart .head #all { margin-left: 21px; }
+#cart .head .all { margin-left: 15px; }
 
 #cart .head p:nth-child(3) { width: 360px; }
 
-#cart .head p:nth-child(4), #cart .head p:nth-child(6), #cart .head p:nth-child(7) { width: 110px; }
-
-#cart .head p:nth-child(5), #cart .head p:nth-child(8) { width: 107px; }
+#cart .head p:nth-child(4), #cart .head p:nth-child(6), #cart .head p:nth-child(7), #cart .head p:nth-child(5), #cart .head p:nth-child(8) { width: 110px; }
 
 #cart .content li { color: #666; padding: 15px 0 15px 5px; border-bottom: 1px dotted #eee; }
 
@@ -72,6 +72,8 @@ body { background: #fff; }
 
 #cart .foot .clear input { margin-left: 13px; }
 
+#total { padding-bottom: 170px; }
+
 #total .account { background: #eee; }
 
 #total .account .go { width: 126px; height: 43px; line-height: 43px; background: url(../img/shopcart.png) no-repeat -19px -108px; font-size: 16px; text-align: center; float: left; margin: 6px 0 5px 35px; }
@@ -103,3 +105,5 @@ body { background: #fff; }
 #total .protect .right p a { color: #a9a9a9; }
 
 #total .protect .right p a:hover { color: #e60012; }
+
+.tright { text-align: center; line-height: 20px; color: #aaa; }

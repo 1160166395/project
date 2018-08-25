@@ -2,7 +2,12 @@
 require(['config'],function(){
     require(['jquery','common','zadzoom'],function($){
         $('#pageHeader').load('html/header.html',function(){
+            //二级导航栏效果
             checkedli();
+            //更新小购物车
+            update();
+            //小购物车删除
+            delet()
         });
         $('#pageFooter').load('html/footer.html');
         $('.carouls').Carousels({

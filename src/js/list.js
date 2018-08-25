@@ -1,9 +1,15 @@
 require(['config'],function(){
     require(['jquery','common'],function($){
         $('#pageHeader').load('../html/header.html',function(){
+            //二级导航栏效果
             checkedli();
+            //更新小购物车
+            update();
+            //小购物车删除
+            delet()
         });
         $('#pageFooter').load('../html/footer.html',function(){
+            //保障图片路径正确
             $('#ygguid img,#footer img').each(function(idx,item){
                 var imgurl =($(this).prop('src')).slice(31);
                 imgurl = '../'+imgurl;
@@ -15,6 +21,7 @@ require(['config'],function(){
             order:'.paixu .left',
             total:'.total',
             go:'#goTop',
+            //初始化
             init(){
                 this.ele = $(this.ele);
                 this.order = $(this.order);

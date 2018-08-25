@@ -54,6 +54,7 @@ body{
                 display:none;
                 position:absolute;
                 width: 335px;
+                z-index:999;
                 padding:15px 10px 10px 20px;
                 box-shadow:1px 1px 3px rgba(0,0,0,0.3);
                 background:#fff;
@@ -282,6 +283,12 @@ body{
             border:1px solid #d1d2d3;
             background:#fff;
             line-height: 31px; 
+            position:relative;
+            &:hover{
+                .smallCart{
+                    display:block;
+                }
+                }
             .tip_left{
                 width: 22px;
                 height: 21px;
@@ -302,8 +309,63 @@ body{
                 margin-left:22px;
                 vertical-align:top;
             }
+            .smallCart{
+                position:absolute;
+                display:none;
+                border:1px solid #ddd;
+                width: 444px;
+                padding:8px;
+                background:#fff;
+                right:0;
+                z-index:1000;
+                color:#666;
+                li{
+                    padding:0 0 24px 0;
+                    border-bottom:1px solid #ddd;
+                    line-height: 20px;
+                    img{
+                        width: 60px;
+                        height: 60px;
+                        margin:0 6px;
+                    }
+                    .name{
+                        padding-top:12px;
+                        width: 245px;
+                        color:#444444;
+                    }
+                    .fr{
+                        padding-top:12px;
+                        margin-right:22px;
+                        text-align:right;
+                    }
+                }
+                .total{
+                    padding-top:6px;
+                    text-align:right;
+                    p{
+                        line-height: 34px;
+                        font-size:14px;
+                    }
+                    input{
+                        background:$mainColor;
+                        width: 94px;
+                        height: 34px;
+                        line-height: 34px;
+                        color:#fff;
+                        text-align:center;
+
+                    }
+                }
+                .kon{
+                    display:none;
+                    height: 140px;
+                    line-height: 140px;
+                    font-size:14px;
+                    text-align:center;
+                }
+            }
         }
-        p:last-child{
+        p.last{
             text-align:center;
          }
     }
