@@ -273,7 +273,7 @@ require(['config'],function(){
                 if(Cookie.get('goodlist') == '[]' || Cookie.get('goodlist') == ''){
                     goodsdata.push(gooddata);
                     goodsdata = JSON.stringify(goodsdata);
-                    Cookie.set('goodlist',goodsdata);
+                    Cookie.set('goodlist',goodsdata,{path:'/src'});
                 }else{
                     var gooddetail = Cookie.get('goodlist');
                     gooddetail = JSON.parse(gooddetail);
@@ -286,7 +286,7 @@ require(['config'],function(){
                     })  
                     gooddetail.push(gooddata);
                     gooddetail = JSON.stringify(gooddetail);
-                    Cookie.set('goodlist',gooddetail);     
+                    Cookie.set('goodlist',gooddetail,{path:'/src'});     
                 }
             }
         }    

@@ -7,7 +7,11 @@ require(['config'],function(){
             //更新小购物车
             update();
             //小购物车删除
-            delet()
+            delet();
+            //保证小购物车中图片路径正确
+            $('.smallCart img').each(function(idx,item){
+                $(item).attr('src',$(item).attr('src').slice(3))
+            })
         });
         $('#pageFooter').load('html/footer.html');
         $('.carouls').Carousels({
